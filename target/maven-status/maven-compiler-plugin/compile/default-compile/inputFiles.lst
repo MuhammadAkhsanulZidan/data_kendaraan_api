@@ -1,0 +1,14 @@
+D:\Documents\CV\jobs\i2s\data_kendaraan_back_end\data_kendaraan_api\src\main\java\com\i2s\data_kendaraan_api\config\CorsConfig.java
+D:\Documents\CV\jobs\i2s\data_kendaraan_back_end\data_kendaraan_api\src\main\java\com\i2s\data_kendaraan_api\config\SecurityConfig.java
+D:\Documents\CV\jobs\i2s\data_kendaraan_back_end\data_kendaraan_api\src\main\java\com\i2s\data_kendaraan_api\controller\KendaraanController.java
+D:\Documents\CV\jobs\i2s\data_kendaraan_back_end\data_kendaraan_api\src\main\java\com\i2s\data_kendaraan_api\DataKendaraanApiApplication.java
+D:\Documents\CV\jobs\i2s\data_kendaraan_back_end\data_kendaraan_api\src\main\java\com\i2s\data_kendaraan_api\dto\APIResponseDto.java
+D:\Documents\CV\jobs\i2s\data_kendaraan_back_end\data_kendaraan_api\src\main\java\com\i2s\data_kendaraan_api\exception\AppExceptionHandler.java
+D:\Documents\CV\jobs\i2s\data_kendaraan_back_end\data_kendaraan_api\src\main\java\com\i2s\data_kendaraan_api\exception\ResourceNotFoundException.java
+D:\Documents\CV\jobs\i2s\data_kendaraan_back_end\data_kendaraan_api\src\main\java\com\i2s\data_kendaraan_api\model\kendaraan\KendaraanDto.java
+D:\Documents\CV\jobs\i2s\data_kendaraan_back_end\data_kendaraan_api\src\main\java\com\i2s\data_kendaraan_api\model\kendaraan\KendaraanFilter.java
+D:\Documents\CV\jobs\i2s\data_kendaraan_back_end\data_kendaraan_api\src\main\java\com\i2s\data_kendaraan_api\model\kendaraan\KendaraanModel.java
+D:\Documents\CV\jobs\i2s\data_kendaraan_back_end\data_kendaraan_api\src\main\java\com\i2s\data_kendaraan_api\repository\KendaraanRepository.java
+D:\Documents\CV\jobs\i2s\data_kendaraan_back_end\data_kendaraan_api\src\main\java\com\i2s\data_kendaraan_api\service\KendaraanService\KendaraanService.java
+D:\Documents\CV\jobs\i2s\data_kendaraan_back_end\data_kendaraan_api\src\main\java\com\i2s\data_kendaraan_api\service\KendaraanService\KendaraanServiceImpl.java
+D:\Documents\CV\jobs\i2s\data_kendaraan_back_end\data_kendaraan_api\src\main\java\com\i2s\data_kendaraan_api\util\MappingUtil.java
