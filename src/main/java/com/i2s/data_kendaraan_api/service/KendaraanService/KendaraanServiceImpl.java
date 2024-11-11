@@ -26,9 +26,9 @@ public class KendaraanServiceImpl implements KendaraanService {
     public List<KendaraanDto> getKendaraanListData(KendaraanFilter filter) {
         List<KendaraanModel> kendaraanList;
         if (filter.getRegistrationNumber() != null) {
-            kendaraanList = kendaraanRepository.findAllByRegistrationNumber(filter.getRegistrationNumber());
+            kendaraanList = kendaraanRepository.findAllByRegistrationNumberContaining(filter.getRegistrationNumber());
         } else if (filter.getOwnerName() != null) {
-            kendaraanList = kendaraanRepository.findAllByOwnerName(filter.getOwnerName());
+            kendaraanList = kendaraanRepository.findAllByOwnerNameContaining(filter.getOwnerName());
         } else {
             kendaraanList = kendaraanRepository.findAll();
         }

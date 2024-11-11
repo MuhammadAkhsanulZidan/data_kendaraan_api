@@ -11,8 +11,8 @@ import java.util.List;
 
 @Repository
 public interface KendaraanRepository extends JpaRepository<KendaraanModel, String>{
-    List<KendaraanModel> findAllByRegistrationNumber(String registrationNumber);
-    List<KendaraanModel> findAllByOwnerName(String ownerName);
+    List<KendaraanModel> findAllByRegistrationNumberContaining(String registrationNumber);
+    List<KendaraanModel> findAllByOwnerNameContaining(String ownerName);
     Optional<KendaraanModel> findByRegistrationNumber(String registrationNumber);
     void deleteByRegistrationNumber(String registrationNumber);
 }

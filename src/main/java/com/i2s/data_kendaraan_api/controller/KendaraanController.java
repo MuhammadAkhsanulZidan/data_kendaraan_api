@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PatchMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -39,6 +40,16 @@ public class KendaraanController {
         List<KendaraanDto> kendaraanList = kendaraanService.getKendaraanListData(filter);
         APIResponseDto<List<KendaraanDto>> response = new APIResponseDto<>(HttpStatus.OK.toString(), "",
                 kendaraanList);
+        return new ResponseEntity<>(response, HttpStatus.OK);
+    }
+
+    @GetMapping("/{registration_number}")
+    public ResponseEntity<APIResponseDto<KendaraanDto>> getKendaraanData(
+            @PathVariable("registration_number") String registrationNumber) {
+
+        KendaraanDto kendaraan = kendaraanService.getKendaraanData(registrationNumber);
+        APIResponseDto<KendaraanDto> response = new APIResponseDto<>(HttpStatus.OK.toString(), "",
+                kendaraan);
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
