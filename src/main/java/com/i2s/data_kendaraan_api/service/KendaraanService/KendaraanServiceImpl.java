@@ -47,6 +47,10 @@ public class KendaraanServiceImpl implements KendaraanService {
 
     @Override
     public KendaraanDto createKendaraanData(@Valid KendaraanDto kendaraanModel) {
+        Optional<KendaraanModel> kendaraanData = kendaraanRepository.findByRegistrationNumber(kendaraanModel.getRegistrationNumber());
+        if (kendaraanData.isPresent()) {
+            throw new IllegalArgumentException("kendaraan data with "+ kendaraanModel.getRegistrationNumber() + " already exist");
+        }
         KendaraanModel savedKendaraan = kendaraanRepository.save(MappingUtil.map(kendaraanModel, KendaraanModel.class));
         return MappingUtil.map(savedKendaraan, KendaraanDto.class);
     }
