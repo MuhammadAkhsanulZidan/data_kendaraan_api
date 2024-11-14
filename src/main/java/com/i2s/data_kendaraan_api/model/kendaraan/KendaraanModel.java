@@ -32,6 +32,9 @@ public class KendaraanModel {
 
     @Column(name = "production_year", length = 4)
     private BigDecimal productionYear;
+    
+    @Column(name = "owner_address")
+    private String ownerAddress;
 
     @Column(name = "cilinder_capacity")
     private BigDecimal cilinderCapacity;

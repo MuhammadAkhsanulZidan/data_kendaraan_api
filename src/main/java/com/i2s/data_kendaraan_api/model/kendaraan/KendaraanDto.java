@@ -33,4 +33,7 @@ public class KendaraanDto {
 
     private String fuel;
 
+    @JsonProperty("owner_address")
+    private String ownerAddress;
+
 }
